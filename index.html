@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" 
         rel="stylesheet"
     >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -47,24 +48,118 @@
         </div>
 
         <div class="film-grid">
-            <!-- 1. Мег: Монстр глубины -->
+            <!-- 1. Оппенгеймер -->
             <div 
                 class="film-card premium" 
-                onclick="openFilm('https://kinogo-films.fm/895-meg-monstr-glubiny.html')"
+                onclick="openFilm('https://kinogo-films.fm/417-oppengejmer.html')"
             >
                 <div class="card-glow"></div>
-                <div class="film-poster shark">
+                <div class="quality-badge">PREMIUM 4K</div>
+                <div class="film-poster oppenheimer">
                     <div class="poster-overlay">
                         <div class="play-icon">▶</div>
                     </div>
-                    <div class="poster-bg">🦈🌊</div>
+                    <div class="poster-bg">💥🔬</div>
                 </div>
                 <div class="film-info">
-                    <h3>Мег: Монстр глубины</h3>
-                    <p class="genre">Action • Thriller • Sci-Fi</p>
+                    <h3>Оппенгеймер</h3>
+                    <p class="genre">Biography • Drama • History</p>
                     <p class="description">
-                        Мегалодон возвращается из глубин океана, чтобы устроить настоящий кошмар 
-                        для человечества в этом захватывающем подводном триллере.
+                        Die Geschichte von J. Robert Oppenheimer, dem Wissenschaftler, der die Atombombe entwickelte, 
+                        und den moralischen Dilemmata, die ihn verfolgten.
+                    </p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="score">8.6</span>
+                    </div>
+                </div>
+                <button class="watch-btn">
+                    <span class="btn-text">Смотреть</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </div>
+
+            <!-- 2. Пункт назначения: Узы крови -->
+            <div 
+                class="film-card premium" 
+                onclick="openFilm('https://kinogo-films.fm/9911-punkt-naznachenija-uzy-krovi.html')"
+            >
+                <div class="card-glow"></div>
+                <div class="quality-badge">PREMIUM 4K</div>
+                <div class="film-poster blood">
+                    <div class="poster-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="poster-bg">🔪💀</div>
+                </div>
+                <div class="film-info">
+                    <h3>Пункт назначения: Узы крови</h3>
+                    <p class="genre">Horror • Thriller</p>
+                    <p class="description">
+                        Ein weiterer Teil der berühmten Horror-Serie, in dem eine Gruppe von Menschen versucht, 
+                        dem Tod zu entkommen, nachdem sie einen tödlichen Unfall überlebt haben.
+                    </p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="score">7.2</span>
+                    </div>
+                </div>
+                <button class="watch-btn">
+                    <span class="btn-text">Смотреть</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </div>
+
+            <!-- 3. Пункт назначения: Комната 666 -->
+            <div 
+                class="film-card premium" 
+                onclick="openFilm('https://kinogo-films.fm/9167-punkt-naznachenija-komnata-666.html')"
+            >
+                <div class="card-glow"></div>
+                <div class="quality-badge">PREMIUM 4K</div>
+                <div class="film-poster room666">
+                    <div class="poster-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="poster-bg">🏨666</div>
+                </div>
+                <div class="film-info">
+                    <h3>Пункт назначения: Комната 666</h3>
+                    <p class="genre">Horror • Mystery</p>
+                    <p class="description">
+                        Ein neues Kapitel der Todesreihe, in dem die Überlebenden eines Flugzeugabsturzes 
+                        in einem Hotel mit der mysteriösen Nummer 666 konfrontiert werden.
+                    </p>
+                    <div class="rating">
+                        <span class="stars">★★★☆☆</span>
+                        <span class="score">6.4</span>
+                    </div>
+                </div>
+                <button class="watch-btn">
+                    <span class="btn-text">Смотреть</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </div>
+
+            <!-- 4. Прокурор -->
+            <div 
+                class="film-card premium" 
+                onclick="openFilm('https://kinogo-films.fm/7825-prokuror.html')"
+            >
+                <div class="card-glow"></div>
+                <div class="quality-badge">PREMIUM 4K</div>
+                <div class="film-poster prosecutor">
+                    <div class="poster-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="poster-bg">⚖️🔫</div>
+                </div>
+                <div class="film-info">
+                    <h3>Прокурор</h3>
+                    <p class="genre">Action • Crime • Thriller</p>
+                    <p class="description">
+                        Ein Staatsanwalt kämpft gegen das organisierte Verbrechen und gerät in 
+                        ein gefährliches Netz aus Korruption und Rache.
                     </p>
                     <div class="rating">
                         <span class="stars">★★★★☆</span>
@@ -76,103 +171,11 @@
                     <span class="btn-icon">→</span>
                 </button>
             </div>
-
-            <!-- 2. Мег 2: Бездна -->
-            <div 
-                class="film-card premium" 
-                onclick="openFilm('https://kinogo-films.fm/50-meg-2-bezdna.html')"
-            >
-                <div class="card-glow"></div>
-                <div class="film-poster ocean">
-                    <div class="poster-overlay">
-                        <div class="play-icon">▶</div>
-                    </div>
-                    <div class="poster-bg">🌊🐋</div>
-                </div>
-                <div class="film-info">
-                    <h3>Мег 2: Бездна</h3>
-                    <p class="genre">Action • Adventure • Horror</p>
-                    <p class="description">
-                        Джейсон Стэйтем возвращается, чтобы сразиться с древними хищниками в еще 
-                        более опасных глубинах океана.
-                    </p>
-                    <div class="rating">
-                        <span class="stars">★★★★☆</span>
-                        <span class="score">7.5</span>
-                    </div>
-                </div>
-                <button class="watch-btn">
-                    <span class="btn-text">Смотреть</span>
-                    <span class="btn-icon">→</span>
-                </button>
-            </div>
-
-            <!-- 3. Миссия невыполнима: Финальная расплата (schlechte Qualität) -->
-            <div 
-                class="film-card low-quality" 
-                onclick="openFilm('https://kinogo-films.fm/9976-missija-nevypolnima-finalnaja-rasplata.html')"
-            >
-                <div class="card-glow"></div>
-                <div class="quality-badge">⚠️ SCHLECHTE QUALITÄT</div>
-                <div class="film-poster thunder">
-                    <div class="poster-overlay">
-                        <div class="play-icon">▶</div>
-                    </div>
-                    <div class="poster-bg">💥🎬</div>
-                </div>
-                <div class="film-info">
-                    <h3>Миссия невыполнима: Финальная расплата</h3>
-                    <p class="genre">Action • Thriller • Adventure</p>
-                    <p class="description">
-                        Итальянский шпионский боевик, где Итан Хант сталкивается с окончательной 
-                        дилеммой и гонкой до последнего выстрела.
-                    </p>
-                    <div class="rating">
-                        <span class="stars">★★★☆☆</span>
-                        <span class="score">6.0</span>
-                    </div>
-                </div>
-                <button class="watch-btn">
-                    <span class="btn-text">Смотреть</span>
-                    <span class="btn-icon">→</span>
-                </button>
-            </div>
-
-            <!-- 4. Каратэ пацан: Легенды (schlechte Qualität) -->
-            <div 
-                class="film-card low-quality" 
-                onclick="openFilm('https://kinogo-films.fm/9916-karatje-pacan-legendy.html')"
-            >
-                <div class="card-glow"></div>
-                <div class="quality-badge">⚠️ SCHLECHTE QUALITÄT</div>
-                <div class="film-poster matrix">
-                    <div class="poster-overlay">
-                        <div class="play-icon">▶</div>
-                    </div>
-                    <div class="poster-bg">🥋🎞️</div>
-                </div>
-                <div class="film-info">
-                    <h3>Каратэ пацан: Легенды</h3>
-                    <p class="genre">Drama • Sport • Family</p>
-                    <p class="description">
-                        Перезагрузка классической истории о молодом бойце, который учится 
-                        мастеру карате и преодолевает все трудности на пути к славе.
-                    </p>
-                    <div class="rating">
-                        <span class="stars">★★★☆☆</span>
-                        <span class="score">5.8</span>
-                    </div>
-                </div>
-                <button class="watch-btn">
-                    <span class="btn-text">Смотреть</span>
-                    <span class="btn-icon">→</span>
-                </button>
-            </div>
         </div>
 
         <div class="footer">
             <div class="footer-content">
-                <p>&copy; 2025 MKFILMS2 • Premium Cinema Collection</p>
+                <p>© 2025 MKFILMS2 • Premium Cinema Collection</p>
                 <div class="social-links">
                     <span class="social-icon">📱</span>
                     <span class="social-icon">🎬</span>
