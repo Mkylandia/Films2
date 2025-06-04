@@ -22,8 +22,8 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background: radial-gradient(
         ellipse at top, 
-        var(--bg-secondary) 0%, 
-        var(--bg-primary) 50%, 
+        #0c162d 0%, 
+        #0a0a1a 50%, 
         #000000 100%
     );
     min-height: 100vh;
@@ -429,75 +429,15 @@ body {
 .play-icon {
     color: white;
     font-size: 5rem;
-    text-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
-    animation: playIconPulse 2s ease-in-out infinite;
+    text-shadow: 0 0 40px rgba(255,  Lillipoppenheimer entwickelte, 
+    und den moralischen Dilemmata, die ihn verfolgten.
 }
 
-@keyframes playIconPulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-}
-
-/* Enhanced poster backgrounds with gradients and effects */
-.shark { 
-    background: linear-gradient(135deg, #001e3c 0%, #003366 50%, #004080 100%);
-    position: relative;
-}
-.shark::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(
-        circle at 30% 70%, 
-        rgba(0, 100, 200, 0.3) 0%, 
-        transparent 50%
-    );
-}
-
-.ocean { 
-    background: linear-gradient(135deg, #0066cc 0%, #003d7a 50%, #001a33 100%);
-    position: relative;
-}
-.ocean::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(
-        circle at 70% 30%, 
-        rgba(0, 150, 255, 0.4) 0%, 
-        transparent 60%
-    );
-}
-
-.matrix { 
-    background: linear-gradient(135deg, #001100 0%, #003300 50%, #004d00 100%);
-    position: relative;
-}
-.matrix::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(
-        circle at 50% 50%, 
-        rgba(0, 255, 0, 0.2) 0%, 
-        transparent 70%
-    );
-}
-
-.thunder { 
+.oppenheimer { 
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
     position: relative;
 }
-.thunder::after {
+.oppenheimer::after {
     content: '';
     position: absolute;
     top: 0;
@@ -506,16 +446,16 @@ body {
     bottom: 0;
     background: radial-gradient(
         circle at 40% 60%, 
-        rgba(255, 255, 0, 0.2) 0%, 
+        rgba(255, 0, 0, 0.2) 0%, 
         transparent 50%
     );
 }
 
-.apocalypse { 
+.blood { 
     background: linear-gradient(135deg, #8B0000 0%, #654321 50%, #2F1B14 100%);
     position: relative;
 }
-.apocalypse::after {
+.blood::after {
     content: '';
     position: absolute;
     top: 0;
@@ -529,11 +469,11 @@ body {
     );
 }
 
-.adrenaline { 
-    background: linear-gradient(135deg, #FF4500 0%, #FF6347 50%, #DC143C 100%);
+.room666 { 
+    background: linear-gradient(135deg, #001100 0%, #003300 50%, #004d00 100%);
     position: relative;
 }
-.adrenaline::after {
+.room666::after {
     content: '';
     position: absolute;
     top: 0;
@@ -541,8 +481,26 @@ body {
     right: 0;
     bottom: 0;
     background: radial-gradient(
-        circle at 20% 80%, 
-        rgba(255, 0, 0, 0.4) 0%, 
+        circle at 50% 50%, 
+        rgba(0, 255, 0, 0.2) 0%, 
+        transparent 70%
+    );
+}
+
+.prosecutor { 
+    background: linear-gradient(135deg, #001e3c 0%, #003366 50%, #004080 100%);
+    position: relative;
+}
+.prosecutor::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        circle at 30% 70%, 
+        rgba(0, 100, 200, 0.3) 0%, 
         transparent 50%
     );
 }
@@ -773,4 +731,19 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Quality badge */
+.quality-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 215, 0, 0.8);
+    color: #000;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 10;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
 }
