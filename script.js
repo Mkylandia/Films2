@@ -22,24 +22,23 @@ function createAdvancedRipple(event) {
     const x = event.clientX - rect.left - size / 2;
     const y = event.clientY - rect.top - size / 2;
     
-    ripple.style.cssText = `
-        position: absolute;
-        left: ${x}px;
-        top: ${y}px;
-        width: ${size}px;
-        height: ${size}px;
-        border-radius: 50%;
-        background: radial-gradient(
-            circle, 
-            rgba(255,215,0,0.6) 0%, 
-            rgba(255,215,0,0.2) 50%, 
-            transparent 100%
-        );
-        transform: scale(0);
-        animation: advancedRipple 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        pointer-events: none;
-        z-index: 1000;
-    `;
+    ripple.style.cssText = 
+        `position: absolute;
+         left: ${x}px;
+         top: ${y}px;
+         width: ${size}px;
+         height: ${size}px;
+         border-radius: 50%;
+         background: radial-gradient(
+             circle, 
+             rgba(255,215,0,0.6) 0%, 
+             rgba(255,215,0,0.2) 50%, 
+             transparent 100%
+         );
+         transform: scale(0);
+         animation: advancedRipple 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+         pointer-events: none;
+         z-index: 1000;`;
     
     event.currentTarget.appendChild(ripple);
     
@@ -108,14 +107,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const rotateX = (y - centerY) / 8;
             const rotateY = (centerX - x) / 8;
             
-            card.style.transform = `
-                perspective(1000px) 
-                rotateX(${rotateX}deg) 
-                rotateY(${rotateY}deg) 
-                translateY(-20px) 
-                scale(1.03)
-                translateZ(50px)
-            `;
+            card.style.transform = 
+                `perspective(1000px) 
+                 rotateX(${rotateX}deg) 
+                 rotateY(${rotateY}deg) 
+                 translateY(-20px) 
+                 scale(1.03)
+                 translateZ(50px)`;
         });
         
         card.addEventListener('mouseleave', function() {
@@ -170,21 +168,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add dynamic cursor effect
     const cursor = document.createElement('div');
     cursor.className = 'custom-cursor';
-    cursor.style.cssText = `
-        position: fixed;
-        width: 20px;
-        height: 20px;
-        background: radial-gradient(
-            circle, 
-            rgba(255,215,0,0.8) 0%, 
-            transparent 70%
-        );
-        border-radius: 50%;
-        pointer-events: none;
-        z-index: 9999;
-        transition: transform 0.1s ease;
-        display: none;
-    `;
+    cursor.style.cssText = 
+        `position: fixed;
+         width: 20px;
+         height: 20px;
+         background: radial-gradient(
+             circle, 
+             rgba(255,215,0,0.8) 0%, 
+             transparent 70%
+         );
+         border-radius: 50%;
+         pointer-events: none;
+         z-index: 9999;
+         transition: transform 0.1s ease;
+         display: none;`;
     document.body.appendChild(cursor);
 
     document.addEventListener('mousemove', (e) => {
@@ -206,8 +203,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Inject additional dynamic CSS animations
     const styleSheet = document.createElement('style');
-    styleSheet.textContent = `
-        @keyframes advancedRipple {
+    styleSheet.textContent = 
+        `@keyframes advancedRipple {
             0% {
                 transform: scale(0);
                 opacity: 1;
@@ -228,7 +225,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
             }
-        }
-    `;
+        }`;
     document.head.appendChild(styleSheet);
 });
